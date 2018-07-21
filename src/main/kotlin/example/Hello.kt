@@ -1,21 +1,31 @@
 package example
 
 import javafx.geometry.Pos
+import javafx.scene.paint.Color
 import tornadofx.*
 
 class HelloWorld : View() {
     override val root = hbox {
-        label("Hello world")
+        label("Hello world") {
+            addClass(HelloWorldStyle.title)
+        }
     }
 }
 
 class HelloWorldStyle : Stylesheet() {
+    companion object {
+        val title by cssclass()
+    }
+
     init {
         root {
             prefWidth = 400.px
             prefHeight = 400.px
             alignment = Pos.CENTER
+        }
+        title {
             fontSize = 50.px
+            textFill = Color.RED
         }
     }
 }

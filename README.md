@@ -1,6 +1,4 @@
-Kotlin TornadoFx (JavaFx) Demo
-===============================
-
-A simple "Hello world" demo for TornadoFX.
+Kotlin TornadoFx Text Style Demo
+================================
 
 Run `Hello.kt` from your IDE.
